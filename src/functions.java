@@ -1,4 +1,4 @@
-public class functions {
+public class Functions {
     public void addition(int num1,int num2){
         int result = num1+num2;
         System.out.println("The result of " +num1+"+"+num2+"="+ result);
