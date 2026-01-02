@@ -1,24 +1,33 @@
 public class Functions {
-    public void addition(int num1,int num2){
-        int result = num1+num2;
-        System.out.println("The result of " +num1+"+"+num2+"= "+ result);
+
+    public double addition(double num1,double num2){
+        double result;
+         result = num1+num2;
+        return result;
     }
 
-    public void multiply(int num1,int num2){
-        int result = num1*num2;
-        System.out.println("The result of " +num1+"*"+num2+"= "+ result);
+    public double multiply(double num1,double num2){
+        double result;
+         result = num1*num2;
+        return result;
     }
-    public void division(int num1,int num2){
-        try {
-            int result = num1 / num2;
-            System.out.println("The result of " + num1 + "/" + num2 + "= " + result);
-        }
-        catch (ArithmeticException e){
+    public double division(double num1,double num2) {
+        double result;
+        if (num2 == 0) {
             System.out.println("can not divide a number by zero");
+            return 0;
         }
+        result = num1 / num2;
+        return result;
     }
-    public void subtraction(int num1,int num2){
-        int result =num1-num2;
-        System.out.println("The result of " +num1+"-"+num2+"= "+ result);
+    public double subtraction(double num1,double num2){
+        double result;
+         result =num1-num2;
+        return result;
+
     }
+    public double power(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
+
 }
